@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
 </head>
@@ -16,7 +17,20 @@
             <div id="form">
                 <h1>Login</h1>
                 <p>Get started by logging in or creating your account.</p>
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post">
+                    <div class="campo">     
+                        <span class="material-icons">person</span>                  
+                        <input type="email" name="email" id="email" placeholder="Email" required maxlength="30">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="password" id="password" placeholder="Password" required minlength="8">
+                        <label for="password">Password</label>
+                    </div>
+                    <input type="submit" value="Enter">
+                    <a href="forgot password">Forgot your password?</a>
+                </form>
             </div>
         </section>
     </main>
